@@ -32,25 +32,25 @@ The application consists of three main tables:
 
 1️⃣ User Table
 Stores user authentication details.
-id
-username
-email
-password
+(id,
+username,
+email,
+password)
 
 2️⃣ UrlMapping Table
 Stores shortened URLs.
-id
-original_url
-short_url
-created_date
-click_count
+(id,
+original_url,
+short_url,
+created_date,
+click_count,
 user_id (FK)
-
+)
 3️⃣ ClickEvent Table
 Tracks each click event for analytics.
-id
-click_date
-url_mapping_id (FK)
+(id,
+click_date,
+url_mapping_id (FK))
 
 🔗 Relationships
 One User → Many UrlMappings
